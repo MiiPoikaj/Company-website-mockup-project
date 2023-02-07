@@ -1,17 +1,91 @@
 body {
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
     background-color: #EDEFEE;
-    font-family: "Markazi Text", serif;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+header {
+    grid-column: 1/ span 3;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+nav {
+    grid-column: 1/ span 3;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+ul > li {
+    list-style: none;
+    display: inline-block;
+}
+
+main {
+    display: grid;
+    background-color: #EDEFEE;
+}
+
+main > section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.promotion {
+    grid-column: 1/ span 3;
+    background-image: url(/Resources/Images/pexels-pixabay-260922.jpg);
+    background-size: cover;
+    color: white;
+    padding-left: 1em;
+}
+
+footer {
+    display: grid;
+    grid-row: 5;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer > img {
+    align-self: center;
+    margin: 20em;
+}
+
+.copyright {
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    min-width: minmax(0, 50%);
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
 
+h1 {
+    font-family: 'Open Sans', sans-serif;
+   
+  }
+  
+  p {
+    font-family: 'Georgia', sans-serif;
+  }
+  
+
+article {
+    background-color: lightyellow;
+    margin: 1em;
 }
