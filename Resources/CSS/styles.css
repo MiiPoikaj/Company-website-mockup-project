@@ -7,23 +7,54 @@ body {
 
 }
 
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    main > section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 header {
+    grid-row: 1;
     grid-column: 1/ span 3;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 nav {
+    grid-row: 2;
     grid-column: 1/ span 3;
-    background-color: lightgreen;
+    background-color: rgb(52, 121, 94);
     text-align: center;
+    font-weight: 400;
+    box-shadow: 1px 5px 10px rgb(52, 121, 94);
+    margin-bottom: 2em;;
+        
+}
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Georgia', sans-serif;
+
 }
 
 ul > li {
     list-style: none;
     display: inline-block;
+    margin: 0 10px;
 }
+
+
 
 main {
     display: grid;
@@ -57,6 +88,7 @@ footer > img {
 .copyright {
     border-top: 2px solid black;
     display: flex;
+    font-style: italic;
     justify-content: flex-end;
     width: 100%;
     min-width: minmax(0, 50%);
@@ -88,4 +120,23 @@ h1 {
 article {
     background-color: lightyellow;
     margin: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 3rem;
+    box-shadow: 1px 5px 5px 5px rgb(148, 144, 144);
 }
+
+article a {
+    color: rgb(52, 121, 94);
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Georgia', sans-serif;
+    padding-top: 1rem;
+}
+
+.promotion, .newmenu, .booknow, .openinghour {
+    text-align: center;
+    padding-bottom: 1rem;
+ }
+
+ 
