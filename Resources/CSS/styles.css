@@ -124,7 +124,7 @@ main>section {
 
 .promotion {
     grid-column: 1/ span 3;
-    background-image: url=(https://github.com/MiiPoikaj/Little-Lemon-website-mockup-project/blob/main/Resources/Images/pexels-pixabay-260922.jpg);
+    background-image: url(https://github.com/MiiPoikaj/Little-Lemon-website-mockup-project/blob/main/Resources/Images/pexels-pixabay-260922.jpg);
     background-size: cover;
     color: white;
     padding-left: 1em;
