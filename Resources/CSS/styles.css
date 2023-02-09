@@ -121,8 +121,7 @@ main>section {
 
 .promotion {
     grid-column: 1/ span 3;
-    background-color: #rgb(52, 121, 94);
-    color: #554a4a;
+    color: #rgb(52, 121, 94);
     padding-left: 1em;
 }
 
