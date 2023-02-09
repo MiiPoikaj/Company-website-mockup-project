@@ -1,12 +1,4 @@
-body {
-    display: grid;
-    grid-auto-rows: minmax(50px, auto);
-    background-color: #EDEFEE;
-    margin-left: 2rem;
-    margin-right: 2rem;
-
-}
-
+/* RESPONSIVENESS */
 @media only screen and (max-width: 767px) {
 
     body {
@@ -61,10 +53,18 @@ body {
     footer {
         grid-row: 7;
     }
-
-
 }
 
+
+/* BODY, HEADER & NAVI */
+
+body {
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    background-color: #EDEFEE;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 
 
 header {
@@ -86,8 +86,6 @@ nav {
     box-shadow: 1px 5px 10px rgb(52, 121, 94);
     margin-bottom: 2em;
     border-radius: 2rem;
-    ;
-
 }
 
 nav a {
@@ -96,22 +94,21 @@ nav a {
     text-decoration: none;
     font-weight: 700;
     font-family: 'Georgia', sans-serif;
-    
-
-
+    justify-self: center;
 }
 
 ul>li {
     list-style: none;
     display: inline-block;
     margin: 0 10px;
-    justify-self: center;
 }
 
 a:hover {
     color: rgb(241, 219, 14);
 }
 
+
+/* MAIN SECTION */
 
 main {
     display: grid;
@@ -124,30 +121,10 @@ main>section {
 
 .promotion {
     grid-column: 1/ span 3;
-    background-image: url(https://github.com/MiiPoikaj/Little-Lemon-website-mockup-project/blob/main/Resources/Images/pexels-pixabay-260922.jpg);
+    background-image: url(/Resources/Images/pexels-pixabay-260922.jpg);
     background-size: cover;
     color: white;
     padding-left: 1em;
-}
-
-footer {
-    display: grid;
-    grid-row: 5;
-    grid-template-columns: 1fr 1fr;
-}
-
-footer>img {
-    align-self: center;
-    margin: 20em;
-}
-
-.copyright {
-    border-top: 2px solid black;
-    display: flex;
-    font-style: italic;
-    justify-content: flex-end;
-    width: 100%;
-    min-width: minmax(0, 50%);
 }
 
 h1 {
@@ -197,11 +174,37 @@ article a {
     padding-bottom: 1rem;
 }
 
+/* FOOTER */
+
+footer {
+    display: grid;
+    grid-row: 5;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer>img {
+    align-self: center;
+    margin: 20em;
+}
+
+.copyright {
+    border-top: 2px solid black;
+    display: flex;
+    font-style: italic;
+    justify-content: flex-end;
+    width: 100%;
+    min-width: minmax(0, 50%);
+}
+
+
+/* 404 PAGE */
 .error {
     grid-column: 1/ span 3;
     padding-left: 1em;
     text-align: center;
 }
+
+/* BACK-TO-TOP-BUTTON*/
 
 #back-to-top-btn {
     display: none;
