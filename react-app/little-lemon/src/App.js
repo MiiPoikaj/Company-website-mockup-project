@@ -2,18 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
+import Promotion from './components/Promotion';
+import Card from './components/Card';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Nav />
-      <main>
-        {/* your main content goes here */}
-      </main>
-      <footer>
-        {/* your footer goes here */}
-      </footer>
+      <Promotion />
+      <Card />
     </div>
   );
 }
