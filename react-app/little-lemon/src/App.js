@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import Promotion from './components/Promotion';
 import Card from './components/Card';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Nav />
       <Promotion />
       <Card />
+      <Footer />
     </div>
   );
 }
