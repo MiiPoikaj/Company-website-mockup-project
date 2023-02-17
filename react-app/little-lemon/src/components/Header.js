@@ -6,6 +6,8 @@ function Header () {
         <header>
             <img src={logo} alt="little lemon restaurant logo" width="25%"/>
         </header>
+
+        
     )
 };
 
